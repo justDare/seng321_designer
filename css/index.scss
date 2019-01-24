@@ -15,7 +15,7 @@ body {
 
     .bg {
         background-image: url("../img/sanfran.jpg");
-       
+        background-attachment: fixed;
         height: 100vh; 
         background-position: center;
         background-repeat: no-repeat;
@@ -29,7 +29,7 @@ body {
     #top-bar {
         height: 100px;
         padding: 20px;
-        position: absolute;
+        position: fixed;
         z-index: 3;
         width: 100%;
 
@@ -72,6 +72,7 @@ body {
             a {
                 color: #ffffff;
                 font-size: 1.5rem;
+                cursor: pointer;
             }
             a:hover {
                 color: grey;
@@ -108,7 +109,7 @@ body {
                 font-weight: lighter;
             }
 
-            #hire {
+            #contactlink {
                 border: 1px solid color(accent);
                 border-radius: 50px;
                 padding: 10px;
@@ -121,7 +122,7 @@ body {
                 transition: width 0.5s;
             }
 
-            #hire:hover {
+            #contactlink:hover {
                 background-color: color(accent);
                 color: color(primary);
                 width: 200px;
@@ -225,6 +226,7 @@ body {
     }
 
     .vision {
+        margin-bottom: 6rem;
         .top {
             height: 100vh;
         }
@@ -252,6 +254,37 @@ body {
             font-weight: 500;
         }
     }
+
+    footer {
+        margin-bottom: 6rem;
+
+        #documents {
+            padding-top: 2rem;
+        }
+    }
         
-  
+    // QUERIES
+    @media(min-width: 1025px) {
+        .bg {
+            background-attachment: none;
+        }
+        .team {
+            height: 100vh;
+        }
+        .vision h5 {
+            padding-top: 0;
+        }
+    }
+
+    @media(min-width: 768px) {
+        footer {
+            #documents {
+                padding-top:0;
+            }
+
+            .row {
+                text-align: left !important;
+            }
+        }
+    }
 }    

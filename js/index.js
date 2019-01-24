@@ -31,4 +31,15 @@ $('#close-nav').click(function() {
 // menu animation
 $('.menu, #close-nav').click(function(){
     $('.menu').toggleClass("down")  ; 
-   })
+});
+
+// fixed navbar 
+$(window).scroll(function () {
+    scroll = $(window).scrollTop();
+    var nav = $('#top-bar');
+    if (scroll > 50) {
+      nav.css({'background-color':'black', 'height':'70px'});
+    } else {
+      nav.css({'background-color':'transparent', 'height':'100px'});
+    }
+  });
