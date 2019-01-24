@@ -15,7 +15,7 @@ body {
 
     .bg {
         background-image: url("../img/sanfran.jpg");
-        background-attachment: fixed;
+        background-attachment: initial;
         height: 100vh; 
         background-position: center;
         background-repeat: no-repeat;
@@ -266,7 +266,7 @@ body {
     // QUERIES
     @media(min-width: 1025px) {
         .bg {
-            background-attachment: none;
+            background-attachment: fixed;
         }
         .team {
             height: 100vh;
@@ -274,6 +274,9 @@ body {
         .vision h5 {
             padding-top: 0;
         }
+    }
+    @media(max-width: 1025px) {
+
     }
 
     @media(min-width: 768px) {

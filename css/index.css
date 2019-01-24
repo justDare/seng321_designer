@@ -6,7 +6,7 @@ body {
 
 body .bg {
   background-image: url("../img/sanfran.jpg");
-  background-attachment: fixed;
+  background-attachment: initial;
   height: 100vh;
   background-position: center;
   background-repeat: no-repeat;
@@ -288,7 +288,7 @@ body footer #documents {
 
 @media (min-width: 1025px) {
   body .bg {
-    background-attachment: none;
+    background-attachment: fixed;
   }
   body .team {
     height: 100vh;
