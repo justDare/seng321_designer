@@ -36,10 +36,17 @@ $('.menu, #close-nav').click(function(){
 // fixed navbar 
 $(window).scroll(function () {
     scroll = $(window).scrollTop();
-    var nav = $('#top-bar');
+    var nav = $('#top');
     if (scroll > 50) {
       nav.css({'background-color':'black', 'height':'70px'});
     } else {
       nav.css({'background-color':'transparent', 'height':'100px'});
     }
   });
+
+  // button css added after page load for aos fade to work 
+  $(document).ready(function() {
+    setTimeout(function() {
+         $('#contactlink').css('transition', 'width 0.5s');
+    }, 2000);
+});

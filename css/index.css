@@ -17,7 +17,7 @@ body .bg {
   padding-top: 100px;
 }
 
-body #top-bar {
+body #top {
   height: 100px;
   padding: 20px;
   position: fixed;
@@ -25,12 +25,13 @@ body #top-bar {
   width: 100%;
 }
 
-body #top-bar .logo {
+body #top .logo {
   float: left;
   font-size: 25px;
+  cursor: pointer;
 }
 
-body #top-bar .menu {
+body #top .menu {
   float: right;
   font-size: 30px;
   cursor: pointer;
@@ -38,7 +39,7 @@ body #top-bar .menu {
   transition: all 0.5s linear;
 }
 
-body #top-bar .down {
+body #top .down {
   -webkit-transform: rotate(450deg);
   transform: rotate(450deg);
 }
@@ -71,6 +72,10 @@ body #side-nav nav a {
 
 body #side-nav nav a:hover {
   color: grey;
+}
+
+body #side-nav nav #aboutlink {
+  padding-top: 2rem;
 }
 
 body .bg-overlay {
@@ -121,8 +126,7 @@ body .bg-overlay .intro #contactlink {
   margin-top: 20px;
   color: white;
   font-weight: 600;
-  -webkit-transition: width 0.5s;
-  transition: width 0.5s;
+  cursor: pointer;
 }
 
 body .bg-overlay .intro #contactlink:hover {
